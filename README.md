@@ -17,25 +17,81 @@
 
 ---
 
-## 🎥 Product Preview
+## 📸 Visual Tour & Product Gallery
 
-```
-+----------------------------------------------------------------------------------------------------+
-|  ContextLock Zero                                            [ Health: 74/100 ] [ 1-Click Demo ]   |
-+-------------------+----------------------------------------------------+---------------------------+
-| 📁 Artifacts      | 🕸️ Interactive Decision Graph                      | 🚨 Active Contradictions  |
-| - PRD.md          |                                                    |   3-Way Auth Dispute      |
-| - meeting_notes.md|   [PRD: JWT] --------> [Envoy Gateway (RS256)]     |   PRD vs Meeting vs Git   |
-| - git_commits.json|         |                                          +---------------------------+
-| - arch_doc.md     |         v                                          | 🛡️ Health Score: 74%      |
-|                   |   [Meeting: OAuth] --> [Mobile Login]              | - Stability: 65% (Churn)  |
-|                   |         |                                          | - Ownership: 1 DRI Gap    |
-|                   |         v                                          +---------------------------+
-|                   |   [Git: Firebase] ---> [Offline Mode (Breaks)]     | 💬 Grounded AI Copilot    |
-|                   |                                                    |   "Why did we switch auth"|
-|                   | ⏳ Decision Replay: [===●================] Step 3/5|   [PRD.md §2] (94% Conf)  |
-+-------------------+----------------------------------------------------+---------------------------+
-```
+Every core capability in ContextLock Zero is built into a dedicated, high-performance module designed for modern engineering teams:
+
+---
+
+### 1. 🚀 High-Conversion Landing Page (`/`)
+*Dynamic Hero, Interactive Architecture Paradigm Switcher, Bento Grid Features, and Live Health Telemetry.*
+![ContextLock Zero Landing Page](docs/screenshots/01_landing_page.png)
+
+> **Description:** Introduces ContextLock Zero's core mission (*"Git Tracks Code. We Protect Project Decisions."*), featuring an interactive multi-paradigm simulator, 4-pillar architectural bento grid, and direct access to both demo workflows and real artifact ingestion.
+
+---
+
+### 2. ⚡ Command Center Studio (`/workspace`)
+*3-Column Cursor/Linear-Style Layout: 18% Project Explorer | 57% React Flow Decision Graph | 25% AI Copilot.*
+![Command Center Workspace](docs/screenshots/02_command_center_workspace.png)
+
+> **Description:** The primary cockpit for engineering leads. Provides real-time synchronization between uploaded files (left), the living interactive decision topology (center), and real-time conflict triage cards with grounded AI copilot intelligence (right).
+
+---
+
+### 3. 📂 Universal Multi-Format Artifact Ingestion (`/upload`)
+*Drag-and-Drop Ingestion Engine for PDF, DOCX, Markdown, Plain Text, JSON, and Git Commit Logs.*
+![Artifact Ingestion Studio](docs/screenshots/03_universal_artifact_ingestion.png)
+
+> **Description:** Deep extraction pipeline supporting unstructured documents. Automatically parses PDF tables, Word DOCX sections, Markdown headers, and Git commit histories with instant tokenization and AST generation.
+
+---
+
+### 4. 🕸️ Interactive Decision Graph Studio (`/graph`)
+*Fullscreen React Flow Topology Canvas with Blast Radius Simulator, Custom Node Glows & Minimap.*
+![Interactive Decision Graph](docs/screenshots/04_interactive_decision_graph.png)
+
+> **Description:** Visualizes the full directed graph of architectural choices, assigned DRIs, and dependent services. Selecting any node immediately calculates the downstream blast radius and highlights affected services in real time.
+
+---
+
+### 5. 🚨 Conflict Radar & Contradiction Triage (`/conflicts`)
+*Cross-Document Triangulation (PRD vs Meeting Notes vs Git Commits) with Evidence Quotes & Resolution Locker.*
+![Conflict Radar](docs/screenshots/05_conflict_radar_triage.png)
+
+> **Description:** Detects hidden architectural contradictions across documents. Each contradiction card displays severity levels, confidence meters, side-by-side evidence diffs, and an actionable lock recommendation to resolve architectural drift.
+
+---
+
+### 6. ⏳ Decision Stability Timeline & Replay (`/timeline`)
+*Chronological Milestone Scrubber, Historical Replay Engine & Technology Flip-Flop Visualizer.*
+![Stability Timeline](docs/screenshots/06_decision_stability_timeline.png)
+
+> **Description:** Visualizes decision volatility and technology churn over time. Allows engineers to scrub through historical decision milestones to pinpoint exactly when and why architecture shifted.
+
+---
+
+### 7. 🛡️ Explainable Decision Health Scorecard (`/health`)
+*Radial SVG Health Gauge with 5 Explainable Diagnostic Dimensions and Actionable 'Why' Breakdowns.*
+![Explainable Health Scorecard](docs/screenshots/07_explainable_health_scorecard.png)
+
+> **Description:** Transparent multi-factor health scorecard measuring Stability (churn count), Conflict Level, Ownership DRI Coverage, Documentation Sync, and Downstream Dependency Risk with clear reasoning.
+
+---
+
+### 8. 💬 Evidence-Grounded AI Copilot (`/chat`)
+*Conversational Architectural Assistant Strictly Constrained to Uploaded Documents with Verifiable Citations.*
+![Grounded AI Copilot](docs/screenshots/08_grounded_ai_copilot.png)
+
+> **Description:** Natural language reasoning engine grounded in the uploaded project documents. Every response includes paragraph citations, exact quotation snippets, source files, and confidence metrics.
+
+---
+
+### 9. 📑 Decision Passport & Compliance Audit (`/report`)
+*Executive Architectural Health Summary with Compliance Verification and 1-Click PDF Report Export.*
+![Decision Passport Report](docs/screenshots/09_decision_passport_audit.png)
+
+> **Description:** Generates a formal Decision Passport audit report ready for executive reviews and compliance audits, complete with a 1-click downloadable PDF generated server-side with ReportLab.
 
 ---
 
