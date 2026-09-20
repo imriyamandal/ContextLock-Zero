@@ -8,7 +8,7 @@
 [![Next.js](https://img.shields.io/badge/Next.js-14.2-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![React Flow](https://img.shields.io/badge/React_Flow-12.3-purple?style=flat-square&logo=react)](https://reactflow.dev/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
-[![Gemini AI](https://img.shields.io/badge/Gemini_1.5_Flash-Google_AI-4285F4?style=flat-square&logo=google)](https://deepmind.google/technologies/gemini/)
+[![Gemini AI](https://img.shields.io/badge/Gemini_2.5_Flash-Google_AI-4285F4?style=flat-square&logo=google)](https://deepmind.google/technologies/gemini/)
 [![SQLite](https://img.shields.io/badge/SQLite-ACID_Store-003B57?style=flat-square&logo=sqlite)](https://www.sqlite.org/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker)](https://www.docker.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald?style=flat-square)](LICENSE)
@@ -225,7 +225,7 @@ ContextLock Zero provides an integrated workspace that brings together all analy
 |---|---|
 | **Frontend** | Next.js 14 (App Router), React 18, Tailwind CSS, `@xyflow/react` (React Flow), Lucide React |
 | **Backend** | FastAPI, Python 3.12, Uvicorn, Pydantic v2 |
-| **AI & LLM** | Google Gemini 1.5 Flash (`google-generativeai`), Structured Prompt Extraction |
+| **AI & LLM** | Google Gemini 2.5 Flash (`google-generativeai`), Structured Prompt Extraction |
 | **Persistence** | SQLite (ACID transactional storage) |
 | **Document Processing** | `pypdf`, `python-docx`, Markdown, JSON parser |
 | **Reporting & Export** | ReportLab (PDF Engine) |
