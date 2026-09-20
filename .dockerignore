@@ -1,0 +1,15 @@
+# Root Docker Ignore
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+**/node_modules
+**/.next
+**/*.db
+**/.git
+**/.github
+**/.kilo
+**/.agents
+**/.vscode
+**/.idea
+**/.DS_Store
+**/*.log
