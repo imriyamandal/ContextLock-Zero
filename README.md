@@ -1,163 +1,351 @@
-# ContextLock Zero: AI Decision Immune System
+# ContextLock Zero
+### AI Decision Immune System
+
+> *"Git tracks code. ContextLock Zero protects project decisions."*
 
 <div align="center">
 
-```
-   ____            _            _   _                 _      _____               
-  / ___|___  _ __ | |_ _____  _| |_| |    ___   ___  | | __ |__  /___ _ __ ___   
- | |   / _ \| '_ \| __/ _ \ \/ / __| |   / _ \ / __| | |/ /   / // _ \ '__/ _ \  
- | |__| (_) | | | | ||  __/>  <| |_| |__| (_) | (__  |   <   / /|  __/ | | (_) | 
-  \____\___/|_| |_|\__\___/_/\_\\__|_____\___/ \___| |_|\_\ /____\___|_|  \___/  
-```
-
-### *"Git tracks code. ContextLock Zero protects project decisions."*
-
-[![Next.js 15](https://img.shields.io/badge/Next.js-15.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![React Flow](https://img.shields.io/badge/React_Flow-12.3-purple?style=for-the-badge&logo=react)](https://reactflow.dev/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.110-009688?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
-[![Gemini AI](https://img.shields.io/badge/Gemini_2.5_Flash-Google_AI-4285F4?style=for-the-badge&logo=google)](https://deepmind.google/technologies/gemini/)
-[![LangGraph](https://img.shields.io/badge/LangGraph-Multi--Agent-FF6F00?style=for-the-badge)](https://langchain-ai.github.io/langgraph/)
-[![SQLite](https://img.shields.io/badge/SQLite-ACID_Store-003B57?style=for-the-badge&logo=sqlite)](https://www.sqlite.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-14.2-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![React Flow](https://img.shields.io/badge/React_Flow-12.3-purple?style=flat-square&logo=react)](https://reactflow.dev/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.110-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
+[![Gemini AI](https://img.shields.io/badge/Gemini_1.5_Flash-Google_AI-4285F4?style=flat-square&logo=google)](https://deepmind.google/technologies/gemini/)
+[![SQLite](https://img.shields.io/badge/SQLite-ACID_Store-003B57?style=flat-square&logo=sqlite)](https://www.sqlite.org/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker)](https://www.docker.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-emerald?style=flat-square)](LICENSE)
 
 </div>
 
 ---
 
-## 🌟 Executive Overview & Product Vision
+## 🎥 Product Preview
 
-Modern software engineering teams scatter critical architecture decisions across PRDs, meeting minutes, Slack threads, Figma comments, and git commit logs. Existing tools preserve raw text, but they fail to detect contradictions or explain decision history with evidence. 
-
-**ContextLock Zero** is an **AI Decision Immune System**. It continuously ingests project specifications, detects hidden cross-document contradictions, explains decision history with verified evidence citations, simulates downstream dependency blast radius, and alerts teams before costly architectural mistakes reach production.
+```
++----------------------------------------------------------------------------------------------------+
+|  ContextLock Zero                                            [ Health: 74/100 ] [ 1-Click Demo ]   |
++-------------------+----------------------------------------------------+---------------------------+
+| 📁 Artifacts      | 🕸️ Interactive Decision Graph                      | 🚨 Active Contradictions  |
+| - PRD.md          |                                                    |   3-Way Auth Dispute      |
+| - meeting_notes.md|   [PRD: JWT] --------> [Envoy Gateway (RS256)]     |   PRD vs Meeting vs Git   |
+| - git_commits.json|         |                                          +---------------------------+
+| - arch_doc.md     |         v                                          | 🛡️ Health Score: 74%      |
+|                   |   [Meeting: OAuth] --> [Mobile Login]              | - Stability: 65% (Churn)  |
+|                   |         |                                          | - Ownership: 1 DRI Gap    |
+|                   |         v                                          +---------------------------+
+|                   |   [Git: Firebase] ---> [Offline Mode (Breaks)]     | 💬 Grounded AI Copilot    |
+|                   |                                                    |   "Why did we switch auth"|
+|                   | ⏳ Decision Replay: [===●================] Step 3/5|   [PRD.md §2] (94% Conf)  |
++-------------------+----------------------------------------------------+---------------------------+
+```
 
 ---
 
-## 🏗️ Multi-Agent Architecture (LangGraph Flow)
+## 🌟 What is ContextLock Zero?
 
-```
-                            ┌────────────────────────────────────────┐
-                            │    Uploaded Artifacts (PDF, MD, Git)   │
-                            └───────────────────┬────────────────────┘
-                                                │
-                                    ┌───────────▼───────────┐
-                                    │    Extractor Agent    │ ◄── Gemini 2.5 Flash
-                                    └───────────┬───────────┘
-                                                │
-                                    ┌───────────▼───────────┐
-                                    │ Decision Graph Engine │
-                                    └───────────┬───────────┘
-                       ┌────────────────────────┼────────────────────────┐
-                       │                        │                        │
-            ┌──────────▼──────────┐  ┌──────────▼──────────┐  ┌──────────▼──────────┐
-            │Conflict Radar Engine│  │Dependency Blaster   │  │Ownership Gap Engine │
-            └──────────┬──────────┘  └──────────┬──────────┘  └──────────┬──────────┘
-                       │                        │                        │
-                       └────────────────────────┼────────────────────────┘
-                                                │
-                                    ┌───────────▼───────────┐
-                                    │Stability & Health Core│
-                                    └───────────┬───────────┘
-                                                │
-           ┌────────────────────────────────────┼────────────────────────────────────┐
-           │                                    │                                    │
-┌──────────▼──────────┐              ┌──────────▼──────────┐              ┌──────────▼──────────┐
-│Decision Immune Ctr  │              │ Interactive Graph + │              │ Grounded Chat +     │
-│& Explainable Health │              │ Replay + Simulator  │              │ Decision Passport   │
-└─────────────────────┘              └─────────────────────┘              └─────────────────────┘
-```
+Modern software engineering teams scatter critical architecture decisions across PRDs, meeting minutes, Slack threads, design specs, and git commit messages. Existing developer tools track source code diffs, but they do not verify whether new code contradicts previously agreed architecture specifications.
 
-### Agent Responsibilities:
-1. **Extractor Agent**: Ingests multi-format artifacts and extracts structured decisions, rationales, alternatives, and exact citation quotes.
-2. **Decision Graph Builder**: Models decisions into a typed graph with relations (`caused`, `discussed`, `replaced`, `approved`, `depends_on`).
-3. **Conflict Radar Agent**: Cross-triangulates documents (PRD vs Meeting vs Git Commits) to detect discrepancies with grounded citations.
-4. **Ownership Gap Agent**: Flags unassigned architectural components lacking a verified DRI/owner.
-5. **Stability Analyzer Agent**: Analyzes historical decision churn and detects flip-flops (e.g., JWT → OAuth → Firebase → JWT).
-6. **Evidence Agent**: Grounds all AI responses strictly on verified source documents with paragraph numbers and confidence scores.
-7. **Chat Reasoning Engine**: Conversational assistant strictly constrained: *"Only explain what uploaded evidence supports. Never invent reasons."*
+**ContextLock Zero** is an **AI Decision Immune System**. It ingests multi-format project artifacts, builds an interactive decision dependency graph, identifies cross-document contradictions with grounded citations, computes downstream impact blast radius, and helps teams detect architectural drift before it propagates into implementation.
 
 ---
 
-## ⚡ Version 2.0: Single-Pane AI Decision Command Center
+## ✨ Key Features
 
-ContextLock Zero Version 2.0 replaces traditional multi-page navigation with an **immersive 3-panel command center**:
+- 🔍 **Decision Extraction** — Parses project artifacts (PDF, DOCX, Markdown, JSON, Git logs) to extract structured decisions, owners, dates, rationales, and alternative options.
+- 🚨 **Conflict Radar** — Cross-triangulates specifications (e.g. PRD vs Meeting Notes vs Git Commits) to flag contradictions and architectural drift.
+- 🕸️ **Interactive Decision Graph** — Visualizes decisions, team DRIs, and system components as an interactive topology network powered by React Flow.
+- 💥 **Impact Blast Radius** — Selects any decision node to compute downstream dependent services and cascading failure risks.
+- ⏳ **Decision Replay** — Interactive milestone scrubber that steps chronologically through project decision history.
+- 🛡️ **Decision Health Scorecard** — Transparent 5-dimension scorecard measuring Stability, Conflict Level, Ownership DRI Coverage, Documentation Sync, and Dependency Risk.
+- 💬 **Grounded AI Copilot** — Conversational assistant strictly constrained to answer using verifiable citations and exact quotes from uploaded documents.
+- 📑 **Decision Passport** — Generates an executive-ready architectural audit report with 1-click PDF download via ReportLab.
+- 🔴 **Live Mode Injector** — Simulates incoming real-time architecture events and meeting outcomes to observe graph and health score shifts live.
 
-| Panel / Component | Description | Judge Highlight |
+---
+
+## 🔄 How It Works
+
+```
+┌──────────────┐     ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
+│  1. INGEST   │ ──> │  2. EXTRACT  │ ──> │  3. CONNECT  │ ──> │  4. DETECT   │
+│  Artifacts   │     │  Decisions & │     │  Build Graph │     │  Contradict- │
+│  (PDF/MD/Git)│     │  Rationales  │     │  & Relations │     │  ions & Gaps │
+└──────────────┘     └──────────────┘     └──────────────┘     └──────┬───────┘
+                                                                      │
+┌──────────────┐     ┌──────────────┐     ┌──────────────┐            │
+│  7. REPORT   │ <── │  6. EXPLAIN  │ <── │  5. ANALYZE  │ <──────────┘
+│  Decision    │     │  Evidence AI │     │  Blast Radius│
+│  Passport PDF│     │  Copilot     │     │  & Churn     │
+└──────────────┘     └──────────────┘     └──────────────┘
+```
+
+1. **Ingest** — Ingest project artifacts (PRDs, meeting notes, Git logs, and architecture specs in PDF, DOCX, Markdown, JSON, TXT).
+2. **Extract** — Parse decisions, technical owners, dates, rationales, alternatives, and exact quotation snippets.
+3. **Connect** — Synthesize a directed decision graph linking requirements, owners, and downstream components.
+4. **Detect** — Cross-triangulate documents to flag paradigm conflicts, flip-flop reversals, and unassigned ownership gaps.
+5. **Analyze** — Traverse dependency trees to calculate downstream blast radius and affected subsystems.
+6. **Explain** — Provide conversational answers grounded in verifiable evidence quotes and confidence scores.
+7. **Report** — Compile findings into an executive Decision Passport report available via PDF export.
+
+---
+
+## 🏗️ Architecture & Multi-Agent System
+
+```
+                          ┌────────────────────────────────────────┐
+                          │    Uploaded Artifacts (PDF, MD, Git)   │
+                          └───────────────────┬────────────────────┘
+                                              │
+                                  ┌───────────▼───────────┐
+                                  │    Extractor Agent    │ ◄── Gemini AI / Deterministic AST
+                                  └───────────┬───────────┘
+                                              │
+                                  ┌───────────▼───────────┐
+                                  │ Decision Graph Engine │
+                                  └───────────┬───────────┘
+                     ┌────────────────────────┼────────────────────────┐
+                     │                        │                        │
+          ┌──────────▼──────────┐  ┌──────────▼──────────┐  ┌──────────▼──────────┐
+          │Conflict Radar Engine│  │Dependency Blaster   │  │Ownership Gap Engine │
+          └──────────┬──────────┘  └──────────┬──────────┘  └──────────┬──────────┘
+                     │                        │                        │
+                     └────────────────────────┼────────────────────────┘
+                                              │
+                                  ┌───────────▼───────────┐
+                                  │Stability & Health Core│
+                                  └───────────┬───────────┘
+                                              │
+                     ┌────────────────────────┴────────────────────────┐
+                     │                                                 │
+          ┌──────────▼──────────┐                           ┌──────────▼──────────┐
+          │ Evidence Grounding  │                           │ Decision Passport   │
+          │ & Copilot Engine    │                           │ PDF Generator       │
+          └─────────────────────┘                           └─────────────────────┘
+```
+
+### Agent & Engine Responsibilities
+
+| Component | Source File | Responsibility |
 |---|---|---|
-| **📁 Left: Ingestion & Files** | Universal drag & drop dropzone for PDF, Markdown, TXT, JSON, Git logs + live extraction progress bar. | Real parsing on arbitrary files + 1-click demo loader (`<1s`). |
-| **🕸️ Center: Living Decision Graph** | React Flow canvas with custom typed nodes, glowing animated edges, and pulsing conflict auras. | Clicking any node calculates downstream blast radius in real-time. |
-| **⏳ Center Bottom: Decision Replay** | Interactive milestone scrubber at the bottom of the graph. | Replays project decisions chronologically with auto-play animation. |
-| **🚨 Right: Conflict Radar** | Cross-triangulates PRD (JWT) vs Meeting (OAuth 2.0) vs Git Commits (Firebase). | Discrepancy diff cards with 1-click resolution and confetti. |
-| **🛡️ Right: Health Scorecard & DRIs** | SVG Radial Health Gauge with 5 explainable dimension scores and "Why" context. | Identifies unowned subsystems (e.g. *Multi-Channel Notifications*). |
-| **💬 Right: Grounded AI Chat** | Conversational assistant strictly grounded on uploaded documents. | Clickable citation pills, paragraph numbers, and confidence metrics. |
-| **📑 Slide-Over: Decision Passport** | Slide-over drawer generating executive audit report matching Page 11 spec. | 1-Click PDF export via ReportLab. |
-| **🔴 Live Mode Injector** | Real-time architecture update simulator. | Ingests live meeting decisions without page reload. |
+| **Extractor Agent** | `backend/agents/extractor.py` | Parses unstructured artifacts via Gemini Generative AI (with deterministic AST fallback) to extract decisions, owners, rationales, and exact quotes. |
+| **Conflict Radar Engine** | `backend/agents/conflict_engine.py` | Detects cross-artifact discrepancies (e.g. JWT vs OAuth 2.0 vs Firebase SDK) with severity levels and action recommendations. |
+| **Ownership Gap Engine** | `backend/agents/ownership_engine.py` | Identifies orphaned architecture decisions and subsystems lacking assigned DRIs. |
+| **Stability Analyzer** | `backend/agents/stability_engine.py` | Evaluates decision volatility, historical churn, and technology flip-flops across timestamps. |
+| **Decision Graph Engine** | `backend/agents/graph_engine.py` | Constructs node/edge topology for React Flow and computes downstream blast radius simulations. |
+| **Explainable Health Scorer** | `backend/agents/health_engine.py` | Computes weighted 5-dimension health metrics with transparent "Why" diagnostic rationale. |
+| **Evidence Grounding & Copilot** | `backend/agents/chat_engine.py` | Conversational engine strictly restricted to answer from uploaded documents with paragraph citations. |
+| **PDF Passport Generator** | `backend/report/pdf_generator.py` | Compiles executive-ready Decision Passport reports into downloadable PDF binaries. |
 
 ---
 
-## 🎬 60-Second Hackathon Demo Script
+## ⚡ AI Decision Command Center
 
-- **00–10s**: Click **⚡ Load Demo Project** on top header (or upload files). Instant toast confirms ingestion in <1s.
-- **10–20s**: Open **Decision Graph**. The interactive React Flow graph renders with colored nodes and animated dependency lines.
-- **20–30s**: Switch to **Conflict Radar**. The **Critical Contradiction Alert** flashes: *"3-Way Authentication Dispute: PRD (JWT) vs Meeting (OAuth 2.0) vs Git Commit (Firebase Auth)"*.
-- **30–40s**: Click the **JWT Node** on the graph. The **Impact Blast Radius** drawer lights up showing direct impact on *API Gateway (Envoy)*, *Mobile Client*, and *Offline Verification Engine*.
-- **40–50s**: Drag the **Decision Replay slider** at the bottom of the screen. Watch milestones spawn chronologically: Sept 10 (JWT) → Sept 12 (OAuth) → Sept 13 (Firebase).
-- **50–60s**: Open **Decision Passport** and click **Download Official PDF**. The executive-ready report downloads immediately.
+ContextLock Zero provides an integrated workspace that brings together all analysis streams:
 
-> **End with:** *"Before teams write the wrong code, ContextLock Zero protects the decision."*
+| Workspace Panel | Description | Key Capability |
+|---|---|---|
+| **📁 Left: Project Explorer** | Multi-format file uploader and artifact inspector. | Ingests PDF, DOCX, Markdown, JSON, and Git commit logs. |
+| **🕸️ Center: Living Decision Graph** | Interactive canvas displaying decisions, DRIs, and system components. | Click any node to highlight downstream dependencies and blast radius. |
+| **⏳ Center Bottom: Decision Replay** | Chronological timeline scrubber with play/pause controls. | Steps through project decision milestones in historical order. |
+| **🚨 Right: Contradictions Tab** | Cross-document conflict detection cards. | Displays side-by-side evidence quotes and action recommendations. |
+| **🛡️ Right: Health & DRIs Tab** | 5-dimension radial health scorecard with "Why" diagnostics. | Highlights unowned architecture subsystems and documentation drift. |
+| **💬 Right: Copilot Tab** | Evidence-grounded conversational assistant. | Answers queries with verifiable citations, paragraph markers, and confidence scores. |
+| **📑 Slide-Over: Decision Passport** | Comprehensive executive audit drawer. | 1-click official PDF report export. |
+
+---
+
+## 🎬 60-Second Demo Walkthrough
+
+1. **00–10s** $\rightarrow$ Click **⚡ 1-Click Demo** on the top command bar to load the Project Pulse dataset (PRD, meeting notes, git commits).
+2. **10–20s** $\rightarrow$ Explore the **Decision Graph** to inspect the interconnected network of decisions, owners, and system dependencies.
+3. **20–30s** $\rightarrow$ Review the **Contradictions Tab** to see the 3-way dispute: PRD (JWT) vs Meeting (OAuth 2.0) vs Git Commit (Firebase Auth).
+4. **30–40s** $\rightarrow$ Click the **JWT Node** on the graph to open the **Impact Blast Radius** drawer, revealing direct impact on API Gateway, Mobile Client, and Offline Verification.
+5. **40–50s** $\rightarrow$ Drag the **Decision Replay slider** at the bottom of the graph to step through milestones chronologically.
+6. **50–60s** $\rightarrow$ Open **Decision Passport** and click **Download PDF** to export the executive audit report.
 
 ---
 
 ## 🛠️ Technology Stack
 
-- **Frontend**: Next.js 15 (App Router), React 18/19, Tailwind CSS, `@xyflow/react` (React Flow), Lucide React, Canvas Confetti.
-- **Backend**: FastAPI, LangGraph Multi-Agent Engine, Gemini 2.5 Flash / Google GenAI SDK, SQLite, ReportLab.
-- **Parsers**: `pypdf`, Markdown, JSON, Git Commit history parsers.
-- **Design System**: Linear / Raycast / Vercel dark theme (`#0A0F1C`, `#111827`, `#7C3AED`, `#22D3EE`, `#EF4444`, `#10B981`).
+| Layer | Technologies |
+|---|---|
+| **Frontend** | Next.js 14 (App Router), React 18, Tailwind CSS, `@xyflow/react` (React Flow), Lucide React |
+| **Backend** | FastAPI, Python 3.12, Uvicorn, Pydantic v2 |
+| **AI & LLM** | Google Gemini 1.5 Flash (`google-generativeai`), Structured Prompt Extraction |
+| **Persistence** | SQLite (ACID transactional storage) |
+| **Document Processing** | `pypdf`, `python-docx`, Markdown, JSON parser |
+| **Reporting & Export** | ReportLab (PDF Engine) |
+| **DevOps & Containers** | Docker, Docker Compose, Multi-stage builds |
 
 ---
 
-## 🚀 Quickstart & Installation
+## 📁 Project Structure
 
-### Prerequisites
+```text
+contextlock-zero/
+├── backend/
+│   ├── agents/                  # AI agents (Extractor, Conflict, Graph, Health, Chat, etc.)
+│   │   ├── chat_engine.py
+│   │   ├── conflict_engine.py
+│   │   ├── extractor.py
+│   │   ├── graph_engine.py
+│   │   ├── health_engine.py
+│   │   ├── ownership_engine.py
+│   │   └── stability_engine.py
+│   ├── api/                     # FastAPI route definitions
+│   │   └── routes.py
+│   ├── db/                      # SQLite database layer & Pydantic models
+│   │   ├── database.py
+│   │   └── models.py
+│   ├── parser/                  # Document parsers (PDF, DOCX, MD, JSON, Git)
+│   │   └── doc_parser.py
+│   ├── report/                  # PDF report generation
+│   │   └── pdf_generator.py
+│   ├── Dockerfile
+│   ├── main.py                  # Server entrypoint
+│   ├── requirements.txt
+│   └── test_backend.py          # Backend test suite
+├── frontend/
+│   ├── app/                     # Next.js App Router pages & layout
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/              # Workspace UI components
+│   │   ├── DecisionDNA.tsx
+│   │   ├── DecisionGraph.tsx
+│   │   ├── HeroDropzone.tsx
+│   │   ├── IntelligenceDeck.tsx
+│   │   ├── LiveModeModal.tsx
+│   │   ├── PassportDrawer.tsx
+│   │   ├── UnifiedWorkspace.tsx
+│   │   └── WorkspaceSidebar.tsx
+│   ├── lib/                     # API client & TypeScript interfaces
+│   │   ├── api.ts
+│   │   └── types.ts
+│   ├── styles/                  # Global Tailwind styles
+│   │   └── globals.css
+│   ├── Dockerfile
+│   ├── next.config.mjs
+│   ├── package.json
+│   └── tsconfig.json
+├── demo-files/                  # Sample test artifacts (PRD, meeting notes, git logs)
+│   ├── PRD.md
+│   ├── architecture_doc.md
+│   ├── git_commits.json
+│   └── meeting_notes.md
+├── docs/                        # Architecture documentation
+│   └── ARCHITECTURE.md
+├── docker-compose.yml           # 1-command full-stack container startup
+├── .gitignore
+└── README.md
+```
+
+---
+
+## 🚀 Quickstart & Setup
+
+### Option 1: Docker Compose (Recommended)
+
+Run both frontend and backend in isolated containers:
+
+```bash
+docker compose up --build
+```
+
+- Frontend: `http://localhost:3000`
+- Backend: `http://localhost:8000` (Swagger API Docs at `http://localhost:8000/docs`)
+
+---
+
+### Option 2: Local Development Setup
+
+#### Prerequisites
 - Node.js 18+ & npm
 - Python 3.10+
 
-### 1. Backend Setup
+#### 1. Backend Setup
+
 ```bash
 cd backend
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# macOS/Linux
-source venv/bin/activate
 
+# Create & activate virtual environment
+python -m venv venv
+
+# On Linux/macOS:
+source venv/bin/activate
+# On Windows (Command Prompt / PowerShell):
+venv\Scripts\activate
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Configure environment variables
+# On Linux/macOS:
+cp .env.example .env
+# On Windows PowerShell:
+Copy-Item .env.example .env
+
+# Start FastAPI server
 python main.py
 ```
-The FastAPI backend will be live at `http://127.0.0.1:8000` (Swagger docs at `/docs`).
 
-### 2. Frontend Setup
+The backend will start at `http://127.0.0.1:8000`.
+
+#### 2. Frontend Setup
+
 ```bash
 cd frontend
+
+# Install dependencies
 npm install
+
+# Configure environment variables
+# On Linux/macOS:
+cp .env.example .env.local
+# On Windows PowerShell:
+Copy-Item .env.example .env.local
+
+# Start development server
 npm run dev
 ```
+
 Open `http://localhost:3000` in your browser.
 
-### 3. Run Automated Tests
+---
+
+## 🧪 Automated Testing
+
+Run the full backend test suite covering API endpoints, SQLite operations, extraction logic, conflict detection, and PDF generation:
+
 ```bash
+# From the project root:
 pytest backend/test_backend.py -v
+```
+
+Validate the frontend production build:
+
+```bash
+cd frontend
+npm run build
 ```
 
 ---
 
-## 🔮 Future Scope & Integrations (Roadmap)
-- **Slack & Microsoft Teams Bot**: Real-time decision capture and contradiction alerts directly in channels.
-- **Jira & Linear Sync**: Automatic issue tagging when decisions drift or reverse.
-- **GitHub Webhook Action**: Blocks PR merges that contradict approved PRD specifications.
-- **Figma Design Plugin**: Syncs UI component requirements with backend architecture locks.
+## 🔮 Roadmap
+
+### Planned Integrations
+- **Slack & Microsoft Teams** — Real-time decision capture and contradiction alerts directly in discussion channels.
+- **Jira & Linear Sync** — Automatic issue tagging when decisions drift or reverse.
+- **GitHub Webhook Action** — CI/CD gate blocking pull requests that contradict approved PRD specifications.
+- **Figma Plugin** — Syncs UI component requirements with backend architecture locks.
+
+*Note: These integrations are planned roadmap items for future releases.*
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
 <div align="center">
-<b>ContextLock Zero</b> · Built for Next-Gen Engineering Teams
+<b>ContextLock Zero</b> · AI Decision Immune System
 </div>
